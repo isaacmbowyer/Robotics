@@ -124,12 +124,14 @@ void proximityObjectDetection(){
   if(objectSeen){
     foundParcel();
   } else if((leftValue == SENSOR_THRESHOLD) && (leftValue >= rightValue)) {
+    // OBJECT SEEN ON LEFT SIDE, TURN THAT DIRECTION
     motors.setSpeeds(-90, 90); 
-    delay(1500);
+    delay(2000);
     motors.setSpeeds(0, 0); 
   } else if((rightValue == SENSOR_THRESHOLD) && (rightValue >= leftValue)) {
+    // OBJECT SEEN ON RIGHT SIDE, TURN THAT DIRECTION
     motors.setSpeeds(90, -90); 
-    delay(1500);
+    delay(2000);
     motors.setSpeeds(0, 0); 
   } else {
     ledYellow(0);
