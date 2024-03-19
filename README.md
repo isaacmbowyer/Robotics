@@ -3,8 +3,9 @@ The project is made up of one program for controlling the Zumo Robot around a ma
 
 ## Setting up the Zumo Robot 
 1. Open the Zumo application into Visual Studio Code or your Ardunio IDE
-2. Connect the Zumo Robot to the PC via USB
-3. Press the Upload button to run the given code
+2. Ensure that Zumo32U4 Library is installed
+3. Connect the Zumo Robot to the PC via USB
+4. Press the Upload button to run the given code
 
 ## Running the Zumo Robot 
 1. Turn the Zumo on to activate the Robot
